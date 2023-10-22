@@ -1,5 +1,5 @@
 body{
-  background-color:  rgb(24 24 27);
+  background-image: url("/todo-list.webp");
 
 }
 html {box-sizing: border-box;}
@@ -10,8 +10,8 @@ html {box-sizing: border-box;}
 }
 :root{
   --primary:rgba(108,186,255,255);
-  --secondary:  rgba(161, 161, 170, 0.473);
-  --dark:  rgba(161, 161, 170, 0.945);
+  --secondary:  rgba(122, 195, 252, 0.432);
+  --dark:  rgba(91, 91, 190, 0.945);
   --border: rgba(102, 102, 221, 0.4);
   --title: rgb(244 244 245);
   --bgHeader: rgb(39,39,42);

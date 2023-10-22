@@ -80,24 +80,29 @@ function Todo() {
       <div className="App">
         <div className="container border">
           <h1 className="my-todo"> MY TODOS</h1>
-          <div className="todo-inputs ">
-            <div className="todo-input-item">
-              <label for="title" >Title:</label>
-              <input type="text" value={TodoTitle} onChange={(e) => { setTodoTitle(e.target.value) }}
-                placeholder="What's The Title of Your To Do??" id="title" />
+          <form>
+            <div className="todo-inputs ">
+              <div className="todo-input-item">
+                <label for="title" >Title:</label>
+                <input type="text" 
+                value={TodoTitle} onChange={(e) => { setTodoTitle(e.target.value) }}
+                  placeholder="What's The Title of Your To Do??" id="title" />
+              </div>
+              <div className="todo-input-item">
+                <label for="desc">Description:</label>
+                <input type="text" 
+                value={TodoDescription} onChange={(e) => { setTodoDescription(e.target.value) }}
+                  placeholder="What's The Description of Your To Do??" id="desc" />
+              </div>
+              <div className="todo-input-item1">
+                <label for="datee">Select Date:</label>
+                <input type="date" 
+                value={TodoDate} onChange={(e) => { setTodoDate(e.target.value) }}
+                  id="datee" />
+              </div>
             </div>
-            <div className="todo-input-item">
-              <label for="desc">Description:</label>
-              <input type="text" value={TodoDescription} onChange={(e) => { setTodoDescription(e.target.value) }}
-                placeholder="What's The Description of Your To Do??" id="desc" />
-            </div>
-            <div className="todo-input-item1">
-              <label for="datee">Select Date:</label>
-              <input type="date" value={TodoDate} onChange={(e) => { setTodoDate(e.target.value) }}
-                 id="datee" />
-            </div>
-          </div>
-            <button className="btn-add" onClick={AddTODO}> Add</button>
+              <button className="btn-add" onClick={AddTODO}> Add</button>
+          </form>
           {/* toggle between two class */}
           <div className='divider'/>
           <div className="btn-area">
